@@ -25,7 +25,14 @@ class Status extends REST_Controller{
     public function index_post(){
         $username = $this->input->post('username');
         $token    = $this->input->post('token');
-        $data     = $this->input->post('data');
+
+        $voltage   = $this->input->post('voltage');
+        $current   = $this->input->post('current');
+        $power     = $this->input->post('power');
+        $energy    = $this->input->post('energy');
+        $frequency = $this->input->post('frequency');
+        $pf        = $this->input->post('pf');
+
         
         $keyword  = array('username' => $username,'token' => $token); 
         $result=$this->m_token->get_data_by_keyword($keyword);        
@@ -35,7 +42,15 @@ class Status extends REST_Controller{
                 'error' => 'Access denied'
             ], REST_Controller::HTTP_UNAUTHORIZED);
         }else{
-            $this->m_data->insert(['data' => $data]);
+            $this->m_data->insert([
+                'voltage'   => $voltage,
+                'current'   => $current,
+                'power'     => $power,
+                'energy'    => $energy,
+                'frequency' => $frequency,
+                'pf'        => $pf
+            ]);
+
             $this->response([
                 'status' => true,
                 'message' => $data." inserted succesfully"
