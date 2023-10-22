@@ -42,20 +42,18 @@ class Status extends REST_Controller{
                 'error' => 'Access denied'
             ], REST_Controller::HTTP_UNAUTHORIZED);
         }else{
-            $data = [
+            $this->m_data->insert([
                 'voltage'   => $voltage,
                 'current'   => $current,
                 'power'     => $power,
                 'energy'    => $energy,
                 'frequency' => $frequency,
                 'pf'        => $pf
-            ];
-
-            $this->m_data->insert($data);
+            ]);
 
             $this->response([
                 'status' => true,
-                'message' => $data." inserted succesfully"
+                'message' => "  Data inserted succesfully"
             ], REST_Controller::HTTP_OK);
         }
     }
