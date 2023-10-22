@@ -9,4 +9,10 @@ class Data_model extends MY_Model {
 		parent::__construct();
 	}
     
+    public function all_value(){
+        $this->db->order_by('id', 'DESC');
+        $this->db->limit(1);
+        return $this->db->get($this->table_master)->row();
+    }
+
 }
