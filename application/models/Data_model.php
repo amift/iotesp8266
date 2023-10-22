@@ -2,7 +2,7 @@
 
 class Data_model extends MY_Model {
 
-	public $table_master = 'test';
+	public $table_master = 'pzem';
 	public $primary_key  = 'id';
 
 	public function __construct(){
