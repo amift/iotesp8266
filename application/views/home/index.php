@@ -25,7 +25,7 @@
 							<div class="card border-info p-3 shadow">
 	                <div class="text-info text-center">VOLTAGE</div>
 	                <div class="text-info text-center mt-2">
-	                	<h3><span id="voltage"></span> V</h3>
+	                	<h4><span id="voltage"></span> V</h4>
 	                </div>
 	            </div>				
 					</div>
@@ -33,7 +33,7 @@
 							<div class="card border-info p-3 shadow">
 	                <div class="text-info text-center">Current</div>
 	                <div class="text-info text-center mt-2">
-	                	<h3><span id="current"></span> A</h3>
+	                	<h4><span id="current"></span> A</h4>
 	                </div>
 	            </div>				
 					</div>
@@ -43,7 +43,7 @@
 							<div class="card border-info p-3 shadow">
 	                <div class="text-info text-center">Power</div>
 	                <div class="text-info text-center mt-2">
-	                	<h3><span id="power"></span> W</h3>
+	                	<h4><span id="power"></span> W</h4>
 	                </div>
 	            </div>				
 					</div>
@@ -51,7 +51,7 @@
 							<div class="card border-info p-3 shadow">
 	                <div class="text-info text-center">Energy</div>
 	                <div class="text-info text-center mt-2">
-	                	<h3><span id="energy"></span> kWH</h3>
+	                	<h4><span id="energy"></span> kWH</h4>
 	                </div>
 	            </div>				
 					</div>
@@ -61,7 +61,7 @@
 							<div class="card border-info p-3 shadow">
 	                <div class="text-info text-center">Frequency</div>
 	                <div class="text-info text-center mt-2">
-	                	<h3><span id="frequency"></span> Hz</h3>
+	                	<h4><span id="frequency"></span> Hz</h4>
 	                </div>
 	            </div>				
 					</div>
@@ -69,7 +69,7 @@
 							<div class="card border-info p-3 shadow">
 	                <div class="text-info text-center">Power Factor</div>
 	                <div class="text-info text-center mt-2">
-	                	<h3><span id="pf"></span></h3>
+	                	<h4><span id="pf"></span></h4>
 	                </div>
 	            </div>				
 					</div>
