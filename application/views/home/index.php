@@ -6,6 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>IOT</title>
 		<link rel="stylesheet" href="<?php echo base_url()?>assets/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="<?php echo base_url()?>assets/bootstrap/css/bootstrap4-toggle.min.css">
 
 		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -16,76 +17,82 @@
 	</head>
 	<body>
 		<div class="container">
-			<h1 class="text-center">Home Controller</h1>
-			<div class="row">
-				<div class="col-xs-12 col-sm-6 col-lg-4 p-2">
-						<div class="card">
-						  <div class="card-body">
-						    <h5 class="card-title">Card title</h5>
-						    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-						    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-						  </div>
-						</div>					
-				</div>
-				<div class="col-xs-12 col-sm-6 col-lg-4 p-2">
-						<div class="card">
-						  <div class="card-body">
-						    <h5 class="card-title">Card title</h5>
-						    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-						    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-						  </div>
-						</div>					
-				</div>
-				<div class="col-xs-12 col-sm-6 col-lg-4 p-2">
-						<div class="card">
-						  <div class="card-body">
-						    <h5 class="card-title">Card title</h5>
-						    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-						    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-						  </div>
-						</div>					
-				</div>
-				<div class="col-xs-12 col-sm-6 col-lg-4 p-2">
-						<div class="card">
-						  <div class="card-body">
-						    <h5 class="card-title">Card title</h5>
-						    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-						    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-						  </div>
-						</div>					
-				</div>
-				<div class="col-xs-12 col-sm-6 col-lg-4 p-2">
-						<div class="card">
-						  <div class="card-body">
-						    <h5 class="card-title">Card title</h5>
-						    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-						    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-						  </div>
-						</div>					
-				</div>
-				<div class="col-xs-12 col-sm-6 col-lg-4 p-2">
-						<div class="card">
-						  <div class="card-body">
-						    <h5 class="card-title">Card title</h5>
-						    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-						    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-						  </div>
-						</div>					
-				</div>
+			<div class="card border-info p-3 mt-2 shadow">
+					<h1 class="text-center">Home Controller</h1>
 			</div>
-			<ul>
-				<li>voltage</li>
-				<li>current</li>
-				<li>power</li>
-				<li>energy</li>
-				<li>frequency</li>
-				<li>pf</li>
-			</ul>
+			<div class="row mt-3">
+					<div class="col">
+							<div class="card border-info p-3 shadow">
+	                <div class="text-info text-center">VOLTAGE</div>
+	                <div class="text-info text-center mt-2"><h3>220 Volt</h3></div>
+	            </div>				
+					</div>
+					<div class="col">
+							<div class="card border-info p-3 shadow">
+	                <div class="text-info text-center">Current</div>
+	                <div class="text-info text-center mt-2"><h3>220 Volt</h3></div>
+	            </div>				
+					</div>
+			</div>
+			<div class="row mt-3">
+					<div class="col">
+							<div class="card border-info p-3 shadow">
+	                <div class="text-info text-center">Power</div>
+	                <div class="text-info text-center mt-2"><h3>220 Volt</h3></div>
+	            </div>				
+					</div>
+					<div class="col">
+							<div class="card border-info p-3 shadow">
+	                <div class="text-info text-center">Energy</div>
+	                <div class="text-info text-center mt-2"><h3>220 Volt</h3></div>
+	            </div>				
+					</div>
+			</div>
+			<div class="row mt-3">
+					<div class="col">
+							<div class="card border-info p-3 shadow">
+	                <div class="text-info text-center">Frequency</div>
+	                <div class="text-info text-center mt-2"><h3>220 Volt</h3></div>
+	            </div>				
+					</div>
+					<div class="col">
+							<div class="card border-info p-3 shadow">
+	                <div class="text-info text-center">Power Factor</div>
+	                <div class="text-info text-center mt-2"><h3>220 Volt</h3></div>
+	            </div>				
+					</div>
+			</div>
+<!-- <div class="col-xs-12 col-sm-6 col-lg-4 p-2">
+						<div class="card">
+						  <div class="card-body">
+						    <span>
+						    	<h5 class="card-title">Voltage</h5>
+						    	<div class="pull-right">444</div>
+						    </span>
+						    <span>
+						    	<h5 class="card-title">Current</h5>
+						    	<div class="pull-right">444</div>
+						    </span>
+						    <span>
+						    	<h5 class="card-title">Power</h5>
+						    	<div class="pull-right">444</div>
+						    </span>
+						    <span>
+						    	<h5 class="card-title">Energy</h5>
+						    	<div class="pull-right">444</div>
+						    </span>
+						    <span>
+						    	<h5 class="card-title">PF</h5>
+						    	<div class="pull-right">444</div>
+						    </span>
+						  </div>
+				</div> -->			
 		</div>
 
 		<!-- jQuery -->
 		<script src="<?php echo base_url()?>assets/jquery/jquery-2.2.3.min.js"></script>
 		<script src="<?php echo base_url()?>assets/bootstrap/js/bootstrap.min.js" ></script>
+		<script src="<?php echo base_url()?>assets/bootstrap/js/bootstrap4-toggle.min.js" ></script>
 		<script type="text/javascript">			
 			  var baseurl  = "<?php echo base_url()?>";
 
@@ -96,10 +103,10 @@
 	            type: "post",
 	            dataType: "json",
 	            success: function(callback){
-	                console.log(callback.data);
+	                // console.log(callback.data['id']);
 	            },
 					    complete:function(data){ 
-						     setTimeout(fetchdata,5000); 
+						     setTimeout(fetchdata,2000); 
 						  }, 
 	            error: function (jqXHR, textStatus, errorThrown){
 	                alert('Error get data from ajax');
@@ -109,7 +116,16 @@
 				} 
 
 				$(document).ready(function(){ 
-				  setTimeout(fetchdata,5000); 
+				  // setTimeout(fetchdata,2000); 
+				    $('#voltage').change(function() {
+				    	stat = $(this).prop('checked');
+				    	if (stat) {
+				    		console.log("aktif");
+				    	}else{
+				    		console.log("modaaar");
+				    	}
+				    })
+
 				});
 		</script>
 	</body>
