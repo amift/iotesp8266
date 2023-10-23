@@ -18,63 +18,69 @@
 	<body>
 		<div class="container">
 			<div class="card border-info p-3 mt-2 shadow">
-					<h1 class="text-center">Home Controller</h1>
+					<h2 class="text-center">Control and Monitoring</h2>
 			</div>
-			<div class="row mt-3">
-					<div class="col">
-							<div class="card border-info p-3 shadow">
-	                <div class="text-info text-center">VOLTAGE</div>
-	                <div class="text-info text-center mt-2">
-	                	<h4><span id="voltage"></span> V</h4>
-	                </div>
-	            </div>				
+			<div class="card border-info p-3 shadow">		
+					<div class="row mt-3">
+							<div class="col">
+									<div class="card border-info p-3">
+			                <div class="text-info text-center">Voltage</div>
+			                <div class="text-info text-center mt-2">
+			                	<h4><span id="voltage">000</span> V</h4>
+			                </div>
+			            </div>				
+							</div>
+							<div class="col">
+									<div class="card border-info p-3">
+			                <div class="text-info text-center">Current</div>
+			                <div class="text-info text-center mt-2">
+			                	<h4><span id="current">000</span> A</h4>
+			                </div>
+			            </div>				
+							</div>
 					</div>
-					<div class="col">
-							<div class="card border-info p-3 shadow">
-	                <div class="text-info text-center">Current</div>
-	                <div class="text-info text-center mt-2">
-	                	<h4><span id="current"></span> A</h4>
-	                </div>
-	            </div>				
+					<div class="row mt-3">
+							<div class="col">
+									<div class="card border-info p-3">
+			                <div class="text-info text-center">Power</div>
+			                <div class="text-info text-center mt-2">
+			                	<h4><span id="power">000</span> W</h4>
+			                </div>
+			            </div>				
+							</div>
+							<div class="col">
+									<div class="card border-info p-3">
+			                <div class="text-info text-center">Energy</div>
+			                <div class="text-info text-center mt-2">
+			                	<h4><span id="energy">000</span> kWH</h4>
+			                </div>
+			            </div>				
+							</div>
+					</div>
+					<div class="row mt-3">
+							<div class="col">
+									<div class="card border-info p-3">
+			                <div class="text-info text-center">Frequency</div>
+			                <div class="text-info text-center mt-2">
+			                	<h4><span id="frequency">00</span> Hz</h4>
+			                </div>
+			            </div>				
+							</div>
+							<div class="col">
+									<div class="card border-info p-3">
+			                <div class="text-info text-center">Power Factor</div>
+			                <div class="text-info text-center mt-2">
+			                	<h4><span id="pf"></span>00</h4>
+			                </div>
+			            </div>				
+							</div>
 					</div>
 			</div>
-			<div class="row mt-3">
-					<div class="col">
-							<div class="card border-info p-3 shadow">
-	                <div class="text-info text-center">Power</div>
-	                <div class="text-info text-center mt-2">
-	                	<h4><span id="power"></span> W</h4>
-	                </div>
-	            </div>				
-					</div>
-					<div class="col">
-							<div class="card border-info p-3 shadow">
-	                <div class="text-info text-center">Energy</div>
-	                <div class="text-info text-center mt-2">
-	                	<h4><span id="energy"></span> kWH</h4>
-	                </div>
-	            </div>				
-					</div>
-			</div>
-			<div class="row mt-3">
-					<div class="col">
-							<div class="card border-info p-3 shadow">
-	                <div class="text-info text-center">Frequency</div>
-	                <div class="text-info text-center mt-2">
-	                	<h4><span id="frequency"></span> Hz</h4>
-	                </div>
-	            </div>				
-					</div>
-					<div class="col">
-							<div class="card border-info p-3 shadow">
-	                <div class="text-info text-center">Power Factor</div>
-	                <div class="text-info text-center mt-2">
-	                	<h4><span id="pf"></span></h4>
-	                </div>
-	            </div>				
-					</div>
-			</div>	
 		</div>
+
+		<nav class="navbar fixed-bottom navbar-light bg-light">
+		  <a class="navbar-brand" href="#">Fixed bottom</a>
+		</nav>
 
 		<!-- jQuery -->
 		<script src="<?php echo base_url()?>assets/jquery/jquery-2.2.3.min.js"></script>
@@ -109,8 +115,9 @@
 				} 
 
 				$(document).ready(function(){ 
-				  setTimeout(fetchdata,2000); 
-				    $('#voltage').change(function() {
+				  	// setTimeout(fetchdata,2000); 
+
+				    $('#btnvoltage').change(function() {
 				    	stat = $(this).prop('checked');
 				    	if (stat) {
 				    		console.log("aktif");
