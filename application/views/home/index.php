@@ -7,6 +7,65 @@
 		<title>IOT</title>
 		<link rel="stylesheet" href="<?php echo base_url()?>assets/bootstrap/css/bootstrap.min.css">
 		<link rel="stylesheet" href="<?php echo base_url()?>assets/bootstrap/css/bootstrap4-toggle.min.css">
+		<link rel="stylesheet" href="<?php echo base_url()?>assets/font-awesome/css/font-awesome.min.css">
+		<style type="text/css">
+
+.navs {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 55px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+    display: flex;
+    overflow-x: auto;
+}
+
+.nav__link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    min-width: 50px;
+    overflow: hidden;
+    white-space: nowrap;
+    font-family: sans-serif;
+    font-size: 13px;
+    color: #444444;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+    transition: background-color 0.1s ease-in-out;
+}
+
+.nav__link:hover {
+    background-color: #eeeeee;
+}
+
+.nav__link--active {
+    color: #009578;
+}
+
+.nav__icon {
+    font-size: 18px;
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -moz-font-feature-settings: 'liga';
+  -moz-osx-font-smoothing: grayscale;
+}			
+		</style>
 
 		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -20,7 +79,7 @@
 			<div class="card border-info p-3 mt-2 shadow">
 					<h2 class="text-center">Control and Monitoring</h2>
 			</div>
-			<div class="card border-info p-3 shadow">		
+			<div class="card border-info p-3 shadow mt-1">		
 					<div class="row mt-3">
 							<div class="col">
 									<div class="card border-info p-3">
@@ -78,8 +137,27 @@
 			</div>
 		</div>
 
-		<nav class="navbar fixed-bottom navbar-light bg-light">
-		  <a class="navbar-brand" href="#">Fixed bottom</a>
+<!-- Bottom Navbar -->
+  <nav class="navbar navbar-expand d-md-none d-lg-none d-xl-none fixed-bottom navbar-light bg-light">
+  <!-- <nav class="navbar navbar-dark bg-info navbar-expand d-md-none d-lg-none d-xl-none fixed-bottom"> -->
+    <ul class="navbar-nav nav-justified w-100">
+      <li class="nav-item">
+        <a href="#" class="nav-link">Home</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link">Cari</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link">Add</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link">Notif</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link">Profile</a>
+      </li>
+    </ul>
+  </nav>
 		</nav>
 
 		<!-- jQuery -->
