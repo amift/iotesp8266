@@ -24,13 +24,17 @@
 					<div class="col">
 							<div class="card border-info p-3 shadow">
 	                <div class="text-info text-center">VOLTAGE</div>
-	                <div class="text-info text-center mt-2"><h3>220 Volt</h3></div>
+	                <div class="text-info text-center mt-2">
+	                	<h3><span id="voltage"></span> V</h3>
+	                </div>
 	            </div>				
 					</div>
 					<div class="col">
 							<div class="card border-info p-3 shadow">
 	                <div class="text-info text-center">Current</div>
-	                <div class="text-info text-center mt-2"><h3>220 Volt</h3></div>
+	                <div class="text-info text-center mt-2">
+	                	<h3><span id="current"></span> A</h3>
+	                </div>
 	            </div>				
 					</div>
 			</div>
@@ -38,13 +42,17 @@
 					<div class="col">
 							<div class="card border-info p-3 shadow">
 	                <div class="text-info text-center">Power</div>
-	                <div class="text-info text-center mt-2"><h3>220 Volt</h3></div>
+	                <div class="text-info text-center mt-2">
+	                	<h3><span id="power"></span> W</h3>
+	                </div>
 	            </div>				
 					</div>
 					<div class="col">
 							<div class="card border-info p-3 shadow">
 	                <div class="text-info text-center">Energy</div>
-	                <div class="text-info text-center mt-2"><h3>220 Volt</h3></div>
+	                <div class="text-info text-center mt-2">
+	                	<h3><span id="energy"></span> kWH</h3>
+	                </div>
 	            </div>				
 					</div>
 			</div>
@@ -52,41 +60,20 @@
 					<div class="col">
 							<div class="card border-info p-3 shadow">
 	                <div class="text-info text-center">Frequency</div>
-	                <div class="text-info text-center mt-2"><h3>220 Volt</h3></div>
+	                <div class="text-info text-center mt-2">
+	                	<h3><span id="frequency"></span> Hz</h3>
+	                </div>
 	            </div>				
 					</div>
 					<div class="col">
 							<div class="card border-info p-3 shadow">
 	                <div class="text-info text-center">Power Factor</div>
-	                <div class="text-info text-center mt-2"><h3>220 Volt</h3></div>
+	                <div class="text-info text-center mt-2">
+	                	<h3><span id="pf"></span></h3>
+	                </div>
 	            </div>				
 					</div>
-			</div>
-<!-- <div class="col-xs-12 col-sm-6 col-lg-4 p-2">
-						<div class="card">
-						  <div class="card-body">
-						    <span>
-						    	<h5 class="card-title">Voltage</h5>
-						    	<div class="pull-right">444</div>
-						    </span>
-						    <span>
-						    	<h5 class="card-title">Current</h5>
-						    	<div class="pull-right">444</div>
-						    </span>
-						    <span>
-						    	<h5 class="card-title">Power</h5>
-						    	<div class="pull-right">444</div>
-						    </span>
-						    <span>
-						    	<h5 class="card-title">Energy</h5>
-						    	<div class="pull-right">444</div>
-						    </span>
-						    <span>
-						    	<h5 class="card-title">PF</h5>
-						    	<div class="pull-right">444</div>
-						    </span>
-						  </div>
-				</div> -->			
+			</div>	
 		</div>
 
 		<!-- jQuery -->
@@ -104,6 +91,12 @@
 	            dataType: "json",
 	            success: function(callback){
 	                // console.log(callback.data['id']);
+	                $('#voltage').html(callback.data['voltage']);
+	                $('#current').html(callback.data['current']);
+	                $('#power').html(callback.data['power']);
+	                $('#energy').html(callback.data['energy']);
+	                $('#frequency').html(callback.data['frequency']);
+	                $('#pf').html(callback.data['pf']);
 	            },
 					    complete:function(data){ 
 						     setTimeout(fetchdata,2000); 
@@ -116,7 +109,7 @@
 				} 
 
 				$(document).ready(function(){ 
-				  // setTimeout(fetchdata,2000); 
+				  setTimeout(fetchdata,2000); 
 				    $('#voltage').change(function() {
 				    	stat = $(this).prop('checked');
 				    	if (stat) {
