@@ -5,7 +5,7 @@
 					<h4 class="text-center">Control and Monitoring</h4>
 		</div>
 			<div class="container">
-				<div class="p-2 mt-1">		
+				<div class="mt-1 mb-4">		
 						<div class="row mt-3">
 								<div class="col">
 										<div class="card border-info p-2">
@@ -63,8 +63,75 @@
 				</div>
 			</div> <!-- container -->
 
+			<div class="container">
+				  <div class="card p-4 mb-1">
+						<div class="d-flex justify-content-between">
+							<div class="d-flex align-items-center">
+								<div>Device 1</div>
+							</div>
+							<input id="btnvoltage" type="checkbox" checked data-toggle="toggle">				
+						</div>
+				  </div>
+				  <div class="card p-4 mb-1">
+						<div class="d-flex justify-content-between">
+							<div class="d-flex align-items-center">
+								<div>Device 2</div>
+							</div>
+							<input id="btnvoltage" type="checkbox" checked data-toggle="toggle">				
+						</div>
+				  </div>
+				  <div class="card p-4 mb-1">
+						<div class="d-flex justify-content-between">
+							<div class="d-flex align-items-center">
+								<div>Device 3</div>
+							</div>
+							<input id="btnvoltage" type="checkbox" checked data-toggle="toggle">				
+						</div>
+				  </div>
+				  <div class="card p-4 mb-1">
+						<div class="d-flex justify-content-between">
+							<div class="d-flex align-items-center">
+								<div>Device 4</div>
+							</div>
+							<input id="btnvoltage" type="checkbox" checked data-toggle="toggle">				
+						</div>
+				  </div>
+				  <div class="card p-4 mb-1">
+						<div class="d-flex justify-content-between">
+							<div class="d-flex align-items-center">
+								<div>Device 5</div>
+							</div>
+							<input id="btnvoltage" type="checkbox" checked data-toggle="toggle">				
+						</div>
+				  </div>
+				  <div class="card p-4 mb-1">
+						<div class="d-flex justify-content-between">
+							<div class="d-flex align-items-center">
+								<div>Device 6</div>
+							</div>
+							<input id="btnvoltage" type="checkbox" checked data-toggle="toggle">				
+						</div>
+				  </div>
+				  <div class="card p-4 mb-1">
+						<div class="d-flex justify-content-between">
+							<div class="d-flex align-items-center">
+								<div>Device 7</div>
+							</div>
+							<input id="btnvoltage" type="checkbox" checked data-toggle="toggle">				
+						</div>
+				  </div>
+				  <div class="card p-4">
+						<div class="d-flex justify-content-between">
+							<div class="d-flex align-items-center">
+								<div>Device 8</div>
+							</div>
+							<input id="btnvoltage" type="checkbox" checked data-toggle="toggle">				
+						</div>
+				  </div>
+			</div>
+			<br><br><br><br><br>
 
-		  <?php $this->load->view('home/_navbar.inc.php'); ?>		
+		<?php $this->load->view('home/_navbar.inc.php'); ?>		
 
 		<!-- jQuery -->
 		<script src="<?php echo base_url()?>assets/jquery/jquery-2.2.3.min.js"></script>
