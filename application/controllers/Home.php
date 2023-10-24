@@ -11,6 +11,12 @@ class Home extends CI_Controller {
     	$this->load->view('home/index');
     }
 
+    public function settings(){
+      $this->load->view('home/settings');
+    }
+
+
+
     public function status(){
       if ($this->input->is_ajax_request()) {      
      		$data=$this->m_data->all_value();

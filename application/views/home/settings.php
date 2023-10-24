@@ -18,70 +18,16 @@
 	</head>
 	<body class="bg-secondary bg-gradient-secondary">
 		<div>
-			<div class="card p-3">
+			<div class="card border-info p-3">
 					<h2 class="text-center">Control and Monitoring</h2>
 			</div>
-			<div class="p-2 shadow mt-1">		
-					<div class="row mt-3">
-							<div class="col">
-									<div class="card border-info p-2">
-			                <div class="text-info text-center">Voltage</div>
-			                <div class="text-info text-center mt-2">
-			                	<h5><span id="voltage">000</span> V</h5>
-			                </div>
-			            </div>				
-							</div>
-							<div class="col">
-									<div class="card border-info p-2">
-			                <div class="text-info text-center">Current</div>
-			                <div class="text-info text-center mt-2">
-			                	<h5><span id="current">000</span> A</h5>
-			                </div>
-			            </div>				
-							</div>
-					</div>
-					<div class="row mt-3">
-							<div class="col">
-									<div class="card border-info p-2">
-			                <div class="text-info text-center">Power</div>
-			                <div class="text-info text-center mt-2">
-			                	<h5><span id="power">000</span> W</h5>
-			                </div>
-			            </div>				
-							</div>
-							<div class="col">
-									<div class="card border-info p-2">
-			                <div class="text-info text-center">Energy</div>
-			                <div class="text-info text-center mt-2">
-			                	<h5><span id="energy">000</span> kWH</h5>
-			                </div>
-			            </div>				
-							</div>
-					</div>
-					<div class="row mt-3">
-							<div class="col">
-									<div class="card border-info p-2">
-			                <div class="text-info text-center">Frequency</div>
-			                <div class="text-info text-center mt-2">
-			                	<h5><span id="frequency">00</span> Hz</h5>
-			                </div>
-			            </div>				
-							</div>
-							<div class="col">
-									<div class="card border-info p-2">
-			                <div class="text-info text-center">Power Factor</div>
-			                <div class="text-info text-center mt-2">
-			                	<h5><span id="pf">00</span></h5>
-			                </div>
-			            </div>				
-							</div>
-					</div>
+			<div class="bg-white p-2 shadow mt-1">		
+					<h2> yesh this is settings</h2>
 			</div>
 		</div>
 
-
-	  <?php $this->load->view('home/_navbar.inc.php'); ?>		
-
+	  
+	<?php $this->load->view('home/_navbar.inc.php'); ?>
 
 		<!-- jQuery -->
 		<script src="<?php echo base_url()?>assets/jquery/jquery-2.2.3.min.js"></script>
