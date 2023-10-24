@@ -17,11 +17,11 @@
 		<![endif]-->
 	</head>
 	<body class="bg-secondary bg-gradient-secondary">
-		<div>
 			<div class="card p-3">
 					<h2 class="text-center">Control and Monitoring</h2>
 			</div>
-			<div class="p-2 shadow mt-1">		
+		<div class="container">
+			<div class="p-2 mt-1">		
 					<div class="row mt-3">
 							<div class="col">
 									<div class="card border-info p-2">
