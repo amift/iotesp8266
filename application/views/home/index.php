@@ -74,7 +74,7 @@
 			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 		<![endif]-->
 	</head>
-	<body>
+	<body class="bg-secondary bg-gradient-secondary">
 		<div class="container">
 			<div class="card border-info p-3 mt-2 shadow">
 					<h2 class="text-center">Control and Monitoring</h2>
@@ -138,7 +138,7 @@
 		</div>
 
 
-	  <nav class="navbar navbar-expand d-md-none d-lg-none d-xl-none fixed-bottom navbar-light bg-light">
+	  <nav class="navbar navbar-dark bg-dark navbar-expand d-md-none d-lg-none d-xl-none fixed-bottom navbar-light bg-light">
 	 
 	    <ul class="navbar-nav nav-justified w-100">
 	      <li class="nav-item m-1">
@@ -146,6 +146,9 @@
 	      </li>
 	      <li class="nav-item m-1">
 	        <a href="#" class="nav-link btn btn-primary text-white">Settings</a>
+	      </li>
+	      <li class="nav-item m-1">
+	        <a href="#" class="nav-link btn btn-primary text-white">About</a>
 	      </li>
 	    </ul>
 
