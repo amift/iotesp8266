@@ -67,65 +67,65 @@
 				  <div class="card p-4 mb-1">
 						<div class="d-flex justify-content-between">
 							<div class="d-flex align-items-center">
-								<div>Device 1</div>
+								<div id="deviceName1">Device 1</div>
 							</div>
-							<input id="btnvoltage" type="checkbox" checked data-toggle="toggle">				
+							<input id="deviceButton1" type="checkbox" checked data-toggle="toggle">				
 						</div>
 				  </div>
 				  <div class="card p-4 mb-1">
 						<div class="d-flex justify-content-between">
 							<div class="d-flex align-items-center">
-								<div>Device 2</div>
+								<div id="deviceName2">Device 2</div>
 							</div>
-							<input id="btnvoltage" type="checkbox" checked data-toggle="toggle">				
+							<input id="deviceButton2" type="checkbox" checked data-toggle="toggle">				
 						</div>
 				  </div>
 				  <div class="card p-4 mb-1">
 						<div class="d-flex justify-content-between">
 							<div class="d-flex align-items-center">
-								<div>Device 3</div>
+								<div id="deviceName3">Device 3</div>
 							</div>
-							<input id="btnvoltage" type="checkbox" checked data-toggle="toggle">				
+							<input id="deviceButton3" type="checkbox" checked data-toggle="toggle">				
 						</div>
 				  </div>
 				  <div class="card p-4 mb-1">
 						<div class="d-flex justify-content-between">
 							<div class="d-flex align-items-center">
-								<div>Device 4</div>
+								<div id="deviceName4">Device 4</div>
 							</div>
-							<input id="btnvoltage" type="checkbox" checked data-toggle="toggle">				
+							<input id="deviceButton4" type="checkbox" checked data-toggle="toggle">				
 						</div>
 				  </div>
 				  <div class="card p-4 mb-1">
 						<div class="d-flex justify-content-between">
 							<div class="d-flex align-items-center">
-								<div>Device 5</div>
+								<div id="deviceName5">Device 5</div>
 							</div>
-							<input id="btnvoltage" type="checkbox" checked data-toggle="toggle">				
+							<input id="deviceButton5" type="checkbox" checked data-toggle="toggle">				
 						</div>
 				  </div>
 				  <div class="card p-4 mb-1">
 						<div class="d-flex justify-content-between">
 							<div class="d-flex align-items-center">
-								<div>Device 6</div>
+								<div id="deviceName6">Device 6</div>
 							</div>
-							<input id="btnvoltage" type="checkbox" checked data-toggle="toggle">				
+							<input id="deviceButton6" type="checkbox" checked data-toggle="toggle">				
 						</div>
 				  </div>
 				  <div class="card p-4 mb-1">
 						<div class="d-flex justify-content-between">
 							<div class="d-flex align-items-center">
-								<div>Device 7</div>
+								<div id="deviceName7">Device 7</div>
 							</div>
-							<input id="btnvoltage" type="checkbox" checked data-toggle="toggle">				
+							<input id="deviceButton7" type="checkbox" checked data-toggle="toggle">				
 						</div>
 				  </div>
 				  <div class="card p-4">
 						<div class="d-flex justify-content-between">
 							<div class="d-flex align-items-center">
-								<div>Device 8</div>
+								<div id="deviceName8">Device 8</div>
 							</div>
-							<input id="btnvoltage" type="checkbox" checked data-toggle="toggle">				
+							<input id="deviceButton8" type="checkbox" checked data-toggle="toggle">				
 						</div>
 				  </div>
 			</div>
@@ -165,17 +165,66 @@
 
 				} 
 
+
+				function getDeviceName(){ 
+
+	        $.ajax({
+	            url : baseurl + 'home/device_name',
+	            type: "post",
+	            dataType: "json",
+	            success: function(callback){
+									$('#deviceName1').html(callback.data[0]['name']);
+									$('#deviceButton1').bootstrapToggle(callback.data[0]['status']);
+
+	                $('#deviceName2').html(callback.data[1]['name']);
+									$('#deviceButton2').bootstrapToggle(callback.data[1]['status']);
+
+	                $('#deviceName3').html(callback.data[2]['name']);
+									$('#deviceButton3').bootstrapToggle(callback.data[2]['status']);
+
+	                $('#deviceName4').html(callback.data[3]['name']);
+									$('#deviceButton4').bootstrapToggle(callback.data[3]['status']);
+
+	                $('#deviceName5').html(callback.data[4]['name']);
+									$('#deviceButton5').bootstrapToggle(callback.data[4]['status']);
+
+	                $('#deviceName6').html(callback.data[5]['name']);
+									$('#deviceButton6').bootstrapToggle(callback.data[5]['status']);
+
+	                $('#deviceName7').html(callback.data[6]['name']);
+									$('#deviceButton7').bootstrapToggle(callback.data[6]['status']);
+
+	                $('#deviceName8').html(callback.data[7]['name']);	            		
+									$('#deviceButton8').bootstrapToggle(callback.data[7]['status']);
+
+	                // $('#voltage').html(callback.data[0]['name']);
+	            },
+					    complete:function(data){ 
+						     setTimeout(fetchdata,2000); 
+						  }, 
+	            error: function (jqXHR, textStatus, errorThrown){
+	                alert('Error get data from ajax');
+	            }
+	        });    
+
+				} 
+
+				function deviceInit(){
+			    $('#deviceButton1').change(function() {
+			    	stat = $(this).prop('checked');
+			    	if (stat) {
+			    		console.log("aktif");
+			    	}else{
+			    		console.log("modaaar");
+			    	}
+			    })					
+				}
+
 				$(document).ready(function(){ 
 				  	setTimeout(fetchdata,2000); 
 
-				    $('#btnvoltage').change(function() {
-				    	stat = $(this).prop('checked');
-				    	if (stat) {
-				    		console.log("aktif");
-				    	}else{
-				    		console.log("modaaar");
-				    	}
-				    })
+				  	getDeviceName();
+				  	deviceInit();
 
 				});
 		</script>
