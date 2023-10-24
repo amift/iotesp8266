@@ -2,7 +2,7 @@
 
 	<body class="bg-secondary bg-gradient-secondary">
 			<div class="card p-3">
-					<h2 class="text-center">Control and Monitoring</h2>
+					<h4 class="text-center">Control and Monitoring</h4>
 			</div>
 		<div class="container">
 			<div class="p-2 mt-1">		
