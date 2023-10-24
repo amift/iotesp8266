@@ -4,11 +4,9 @@
 			<div class="d-flex d-flex justify-content-between bg-secondary">
 			  <div class="p-2">
 			  	<div class="d-flex justify-content-start">
-			  		<div class="btn btn-info">
-			  			<div class="fa fa-home"></div>
-			  		</div>
-			  		<div class="btn btn-info">2</div>
-			  		<div class="btn btn-info">3</div>
+			  		<a class="btn btn-info" href="<?php echo base_url('home') ?> ">
+			  			<i class="fa fa-home"></i>
+			  		</a>
 			  	</div>
 			  </div>
 			  <div class="p-2">
