@@ -193,7 +193,7 @@
 				} 
 
 				$(document).ready(function(){ 
-				  	// setTimeout(fetchdata,2000); 
+				  	setTimeout(fetchdata,2000); 
 
 				    $('#btnvoltage').change(function() {
 				    	stat = $(this).prop('checked');
