@@ -21,7 +21,7 @@
 		<!-- jQuery -->
 		<script src="<?php echo base_url()?>assets/jquery/jquery-2.2.3.min.js"></script>
 		<script src="<?php echo base_url()?>assets/bootstrap/js/bootstrap.min.js" ></script>
-		<script type="text/javascript">			
+		<!-- <script type="text/javascript">			
 			  var baseurl  = "<?php echo base_url()?>";
 
 				function fetchdata(){ 
@@ -46,7 +46,7 @@
 				$(document).ready(function(){ 
 				  setTimeout(fetchdata,5000); 
 				});
-		</script>
+		</script> -->
 	</body>
 </html>
 
