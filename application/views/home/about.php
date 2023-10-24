@@ -22,7 +22,7 @@
 			</div>
 		<div class="container">
 			<div class="p-2 mt-1">		
-					<h2>Settings</h2>
+					<h2>About</h2>
 			</div>
 		</div>
 
