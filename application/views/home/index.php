@@ -17,11 +17,11 @@
 		<![endif]-->
 	</head>
 	<body class="bg-secondary bg-gradient-secondary">
-		<div class="container">
-			<div class="card border-info p-3 mt-2 shadow">
+		<div>
+			<div class="card border-info p-3">
 					<h2 class="text-center">Control and Monitoring</h2>
 			</div>
-			<div class="card border-info p-3 shadow mt-1">		
+			<div class="p-2 shadow mt-1">		
 					<div class="row mt-3">
 							<div class="col">
 									<div class="card border-info p-2">
@@ -87,7 +87,7 @@
 			  <div class="p-2">
 			  	<div class="d-flex justify-content-start">
 			  		<div class="btn btn-info">
-			  			<div class="fa fa-home fa-2x"></div>
+			  			<div class="fa fa-home"></div>
 			  		</div>
 			  		<div class="btn btn-info">2</div>
 			  		<div class="btn btn-info">3</div>
@@ -96,13 +96,13 @@
 			  <div class="p-2">
 					<div class="d-flex justify-content-end">
 			  		<div class="btn btn-info">
-			  			<div class="fa fa-cog fa-2x"></div>
+			  			<div class="fa fa-cog"></div>
 			  		</div>
 			  		<div class="btn btn-info">
-			  			<i class="fa fa-question-circle fa-2x"></i>
+			  			<i class="fa fa-question-circle"></i>
 			  		</div>
 			  		<div class="btn btn-info">
-			  			<div class="fa fa-sign-out fa-2x"></div>			  			
+			  			<div class="fa fa-sign-out"></div>			  			
 			  		</div>
 			  	</div>			  	
 			  </div>
