@@ -129,7 +129,7 @@
 									<div class="card border-info p-3">
 			                <div class="text-info text-center">Power Factor</div>
 			                <div class="text-info text-center mt-2">
-			                	<h4><span id="pf"></span>00</h4>
+			                	<h4><span id="pf">00</span></h4>
 			                </div>
 			            </div>				
 							</div>
