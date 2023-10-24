@@ -15,7 +15,7 @@ class Home extends CI_Controller {
       $this->load->view('home/settings');
     }
 
-    public function settings(){
+    public function about(){
       $this->load->view('home/about');
     }
 
