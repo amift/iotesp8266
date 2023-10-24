@@ -82,54 +82,54 @@
 			<div class="card border-info p-3 shadow mt-1">		
 					<div class="row mt-3">
 							<div class="col">
-									<div class="card border-info p-3">
+									<div class="card border-info p-2">
 			                <div class="text-info text-center">Voltage</div>
 			                <div class="text-info text-center mt-2">
-			                	<h4><span id="voltage">000</span> V</h4>
+			                	<h5><span id="voltage">000</span> V</h5>
 			                </div>
 			            </div>				
 							</div>
 							<div class="col">
-									<div class="card border-info p-3">
+									<div class="card border-info p-2">
 			                <div class="text-info text-center">Current</div>
 			                <div class="text-info text-center mt-2">
-			                	<h4><span id="current">000</span> A</h4>
+			                	<h5><span id="current">000</span> A</h5>
 			                </div>
 			            </div>				
 							</div>
 					</div>
 					<div class="row mt-3">
 							<div class="col">
-									<div class="card border-info p-3">
+									<div class="card border-info p-2">
 			                <div class="text-info text-center">Power</div>
 			                <div class="text-info text-center mt-2">
-			                	<h4><span id="power">000</span> W</h4>
+			                	<h5><span id="power">000</span> W</h5>
 			                </div>
 			            </div>				
 							</div>
 							<div class="col">
-									<div class="card border-info p-3">
+									<div class="card border-info p-2">
 			                <div class="text-info text-center">Energy</div>
 			                <div class="text-info text-center mt-2">
-			                	<h4><span id="energy">000</span> kWH</h4>
+			                	<h5><span id="energy">000</span> kWH</h5>
 			                </div>
 			            </div>				
 							</div>
 					</div>
 					<div class="row mt-3">
 							<div class="col">
-									<div class="card border-info p-3">
+									<div class="card border-info p-2">
 			                <div class="text-info text-center">Frequency</div>
 			                <div class="text-info text-center mt-2">
-			                	<h4><span id="frequency">00</span> Hz</h4>
+			                	<h5><span id="frequency">00</span> Hz</h5>
 			                </div>
 			            </div>				
 							</div>
 							<div class="col">
-									<div class="card border-info p-3">
+									<div class="card border-info p-2">
 			                <div class="text-info text-center">Power Factor</div>
 			                <div class="text-info text-center mt-2">
-			                	<h4><span id="pf">00</span></h4>
+			                	<h5><span id="pf">00</span></h5>
 			                </div>
 			            </div>				
 							</div>
