@@ -1,18 +1,28 @@
 <?php $this->load->view('home/_header.inc.php'); ?>		
 
-	<body class="bg-secondary bg-gradient-secondary">
-			<div class="card p-3">
-					<h4 class="text-center">Control and Monitoring</h4>
+	<body>
+			<div class="card p-3  bg-secondary text-white">
+					<h5>Control and Monitoring</h5>
+					<small>About</small>
 			</div>
 		<div class="container">
-			<div class="p-2 mt-1">		
-					<h2>About</h2>
+			<div class="p-2 mt-1">
+					<div class=" p-3 text-center">
+
+				        <div class="p-2">
+										<img height="120px" class="mx-auto d-block" src="<?php echo base_url("assets/images/stiki-logo.png") ?> " alt="">
+				        </div>
+								<br>
+								Sekolah Tinggi Informatika dan Komputer Indonesia
+								<br><br>
+							<p>Kontrol dan Monitoring Peralatan Rumah Tangga</p>
+							<small>Oleh : Miftahul</small><br>
+							<small>NRP : 181116069</small>
+					</div>
 			</div>
 		</div>
 
-
 	  <?php $this->load->view('home/_navbar.inc.php'); ?>		
-
 
 		<!-- jQuery -->
 		<script src="<?php echo base_url()?>assets/jquery/jquery-2.2.3.min.js"></script>

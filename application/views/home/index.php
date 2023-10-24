@@ -1,7 +1,7 @@
 	<?php $this->load->view('home/_header.inc.php'); ?>		
 
-	<body class="bg-secondary bg-gradient-secondary">
-		<div class="card p-3">
+	<body>
+		<div class="card p-3 bg-secondary text-white">
 					<h4 class="text-center">Control and Monitoring</h4>
 		</div>
 			<div class="container">
