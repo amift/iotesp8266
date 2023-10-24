@@ -137,28 +137,19 @@
 			</div>
 		</div>
 
-<!-- Bottom Navbar -->
-  <nav class="navbar navbar-expand d-md-none d-lg-none d-xl-none fixed-bottom navbar-light bg-light">
-  <!-- <nav class="navbar navbar-dark bg-info navbar-expand d-md-none d-lg-none d-xl-none fixed-bottom"> -->
-    <ul class="navbar-nav nav-justified w-100">
-      <li class="nav-item">
-        <a href="#" class="nav-link">Home</a>
-      </li>
-      <li class="nav-item">
-        <a href="#" class="nav-link">Cari</a>
-      </li>
-      <li class="nav-item">
-        <a href="#" class="nav-link">Add</a>
-      </li>
-      <li class="nav-item">
-        <a href="#" class="nav-link">Notif</a>
-      </li>
-      <li class="nav-item">
-        <a href="#" class="nav-link">Profile</a>
-      </li>
-    </ul>
-  </nav>
-		</nav>
+
+	  <nav class="navbar navbar-expand d-md-none d-lg-none d-xl-none fixed-bottom navbar-light bg-light">
+	 
+	    <ul class="navbar-nav nav-justified w-100">
+	      <li class="nav-item m-1">
+	        <a href="#" class="nav-link btn btn-primary text-white">Home</a>
+	      </li>
+	      <li class="nav-item m-1">
+	        <a href="#" class="nav-link btn btn-primary text-white">Settings</a>
+	      </li>
+	    </ul>
+
+	  </nav>
 
 		<!-- jQuery -->
 		<script src="<?php echo base_url()?>assets/jquery/jquery-2.2.3.min.js"></script>
