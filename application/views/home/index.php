@@ -8,64 +8,6 @@
 		<link rel="stylesheet" href="<?php echo base_url()?>assets/bootstrap/css/bootstrap.min.css">
 		<link rel="stylesheet" href="<?php echo base_url()?>assets/bootstrap/css/bootstrap4-toggle.min.css">
 		<link rel="stylesheet" href="<?php echo base_url()?>assets/font-awesome/css/font-awesome.min.css">
-		<style type="text/css">
-
-.navs {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    height: 55px;
-    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
-    background-color: #ffffff;
-    display: flex;
-    overflow-x: auto;
-}
-
-.nav__link {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    flex-grow: 1;
-    min-width: 50px;
-    overflow: hidden;
-    white-space: nowrap;
-    font-family: sans-serif;
-    font-size: 13px;
-    color: #444444;
-    text-decoration: none;
-    -webkit-tap-highlight-color: transparent;
-    transition: background-color 0.1s ease-in-out;
-}
-
-.nav__link:hover {
-    background-color: #eeeeee;
-}
-
-.nav__link--active {
-    color: #009578;
-}
-
-.nav__icon {
-    font-size: 18px;
-}
-
-.material-icons {
-  font-family: 'Material Icons';
-  font-weight: normal;
-  font-style: normal;
-  font-size: 24px;
-  line-height: 1;
-  letter-spacing: normal;
-  text-transform: none;
-  display: inline-block;
-  white-space: nowrap;
-  word-wrap: normal;
-  direction: ltr;
-  -moz-font-feature-settings: 'liga';
-  -moz-osx-font-smoothing: grayscale;
-}			
-		</style>
 
 		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -138,21 +80,36 @@
 		</div>
 
 
-	  <nav class="navbar navbar-dark bg-dark navbar-expand d-md-none d-lg-none d-xl-none fixed-bottom navbar-light bg-light">
-	 
-	    <ul class="navbar-nav nav-justified w-100">
-	      <li class="nav-item m-1">
-	        <a href="#" class="nav-link btn btn-primary text-white">Home</a>
-	      </li>
-	      <li class="nav-item m-1">
-	        <a href="#" class="nav-link btn btn-primary text-white">Settings</a>
-	      </li>
-	      <li class="nav-item m-1">
-	        <a href="#" class="nav-link btn btn-primary text-white">About</a>
-	      </li>
-	    </ul>
+	  
+		<div class="pt-2 pn-2">
+			
+			<div class="d-flex d-flex justify-content-between bg-secondary">
+			  <div class="p-2">
+			  	<div class="d-flex justify-content-start">
+			  		<div class="btn btn-info">
+			  			<div class="fa fa-home fa-2x"></div>
+			  		</div>
+			  		<div class="btn btn-info">2</div>
+			  		<div class="btn btn-info">3</div>
+			  	</div>
+			  </div>
+			  <div class="p-2">
+					<div class="d-flex justify-content-end">
+			  		<div class="btn btn-info">
+			  			<div class="fa fa-cog fa-2x"></div>
+			  		</div>
+			  		<div class="btn btn-info">
+			  			<i class="fa fa-question-circle fa-2x"></i>
+			  		</div>
+			  		<div class="btn btn-info">
+			  			<div class="fa fa-sign-out fa-2x"></div>			  			
+			  		</div>
+			  	</div>			  	
+			  </div>
+			</div>
 
-	  </nav>
+		</div>
+
 
 		<!-- jQuery -->
 		<script src="<?php echo base_url()?>assets/jquery/jquery-2.2.3.min.js"></script>
