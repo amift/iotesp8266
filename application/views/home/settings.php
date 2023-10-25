@@ -42,6 +42,48 @@
 		<script src="<?php echo base_url()?>assets/jquery/jquery-2.2.3.min.js"></script>
 		<script src="<?php echo base_url()?>assets/bootstrap/js/bootstrap.min.js" ></script>
 		<script src="<?php echo base_url()?>assets/bootstrap/js/bootstrap4-toggle.min.js" ></script>
+		<script type="text/javascript">
+			var baseurl  = "<?php echo base_url()?>";
+
+
+			function getDeviceName(){ 
+	        $.ajax({
+	            url : baseurl + 'home/device_name',
+	            type: "post",
+	            dataType: "json",
+	            success: function(callback){
+									$('#deviceButton1').val(callback.data[0]['name']);
+
+	                $('#deviceButton2').val(callback.data[1]['name']);
+
+	                $('#deviceButton3').val(callback.data[2]['name']);
+
+	                $('#deviceButton4').val(callback.data[3]['name']);
+
+	                $('#deviceButton5').val(callback.data[4]['name']);
+
+	                $('#deviceButton6').val(callback.data[5]['name']);
+
+	                $('#deviceButton7').val(callback.data[6]['name']);
+
+	                $('#deviceButton8').val(callback.data[7]['name']);	            		
+	            },
+					    complete:function(data){ 
+						     setTimeout(fetchdata,2000); 
+						  }, 
+	            error: function (jqXHR, textStatus, errorThrown){
+	                alert('Error get data from ajax');
+	            }
+	        });    
+				} 
+
+				$(document).ready(function(){ 
+
+				  	getDeviceName();
+
+				});
+
+		</script>
 	</body>
 </html>
 
