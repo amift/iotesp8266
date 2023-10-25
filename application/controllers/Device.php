@@ -39,10 +39,7 @@ class Device extends REST_Controller{
         }else{
             $data=$this->m_device->stat_value();
 
-            $this->response([
-                'status' => true,
-                'message' => $data
-            ], REST_Controller::HTTP_OK);
+            $this->response($data, REST_Controller::HTTP_OK);
         }
     }
 
