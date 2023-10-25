@@ -142,7 +142,6 @@
 			  var baseurl  = "<?php echo base_url()?>";
 
 				function fetchdata(){ 
-
 	        $.ajax({
 	            url : baseurl + 'home/status',
 	            type: "post",
@@ -162,12 +161,10 @@
 	                alert('Error get data from ajax');
 	            }
 	        });    
-
 				} 
 
 
 				function getDeviceName(){ 
-
 	        $.ajax({
 	            url : baseurl + 'home/device_name',
 	            type: "post",
@@ -209,16 +206,114 @@
 
 				} 
 
+				function deviceActive(id){ 
+	        $.ajax({
+	            url : baseurl + 'device/active',
+	            type: "post",
+	            data: { id : id },
+	            dataType: "json",
+	            success: function(callback){
+	            },
+					    complete:function(data){ 
+						     setTimeout(fetchdata,2000); 
+						  }, 
+	            error: function (jqXHR, textStatus, errorThrown){
+	                alert('Error get data from ajax');
+	            }
+	        });    
+				}
+
+				function deviceNonActive(id){ 
+	        $.ajax({
+	            url : baseurl + 'device/nonactive',
+	            type: "post",
+	            data: { id : id },
+	            dataType: "json",
+	            success: function(callback){
+	            },
+					    complete:function(data){ 
+						     setTimeout(fetchdata,2000); 
+						  }, 
+	            error: function (jqXHR, textStatus, errorThrown){
+	                alert('Error get data from ajax');
+	            }
+	        });    
+				}
+
 				function deviceInit(){
 			    $('#deviceButton1').change(function() {
 			    	stat = $(this).prop('checked');
 			    	if (stat) {
-			    		console.log("aktif");
+			    		deviceActive(1);
 			    	}else{
-			    		console.log("modaaar");
+			    		deviceNonActive(1);
 			    	}
-			    })					
+			    })
+
+			    $('#deviceButton2').change(function() {
+			    	stat = $(this).prop('checked');
+			    	if (stat) {
+			    		deviceActive(2);
+			    	}else{
+			    		deviceNonActive(2);
+			    	}
+			    })
+
+			    $('#deviceButton3').change(function() {
+			    	stat = $(this).prop('checked');
+			    	if (stat) {
+			    		deviceActive(3);
+			    	}else{
+			    		deviceNonActive(3);
+			    	}
+			    })
+
+			    $('#deviceButton4').change(function() {
+			    	stat = $(this).prop('checked');
+			    	if (stat) {
+			    		deviceActive(4);
+			    	}else{
+			    		deviceNonActive(4);
+			    	}
+			    })
+
+			    $('#deviceButton5').change(function() {
+			    	stat = $(this).prop('checked');
+			    	if (stat) {
+			    		deviceActive(5);
+			    	}else{
+			    		deviceNonActive(5);
+			    	}
+			    })
+
+			    $('#deviceButton6').change(function() {
+			    	stat = $(this).prop('checked');
+			    	if (stat) {
+			    		deviceActive(6);
+			    	}else{
+			    		deviceNonActive(6);
+			    	}
+			    })
+
+			    $('#deviceButton7').change(function() {
+			    	stat = $(this).prop('checked');
+			    	if (stat) {
+			    		deviceActive(7);
+			    	}else{
+			    		deviceNonActive(7);
+			    	}
+			    })
+
+			    $('#deviceButton8').change(function() {
+			    	stat = $(this).prop('checked');
+			    	if (stat) {
+			    		deviceActive(8);
+			    	}else{
+			    		deviceNonActive(8);
+			    	}
+			    })
 				}
+
 
 				$(document).ready(function(){ 
 				  	setTimeout(fetchdata,2000); 

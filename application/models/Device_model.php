@@ -28,4 +28,12 @@ class Device_model extends MY_Model {
         return $rest;
     }
 
+    public function set_status_active($id){
+        $this->db->where(['id' => $id])->update($this->table_master, ['status' => 'on']);
+    }
+
+    public function set_status_nonactive($id){
+        $this->db->where(['id' => $id])->update($this->table_master, ['status' => 'off']);
+    }
+
 }
