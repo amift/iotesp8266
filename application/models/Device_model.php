@@ -20,9 +20,9 @@ class Device_model extends MY_Model {
         $rest = '';
         foreach ($data as $key) {
         	if ( $key['status'] == 'on' ) {
-        		$rest .= 'A';
+        		$rest .= '1';
         	}else{
-        		$rest .= 'B';
+        		$rest .= '0';
         	}
         }
         return $rest;
