@@ -16,9 +16,12 @@ class Device extends REST_Controller{
     }
 
     public function index_get(){
+        $data=$this->m_device->stat_value();
+        print_r($data);
+        die();
         $this->response([
             'status' => true,
-            'message' => 'Just GET response'
+            'message' => 'Just GET response '.$data
         ], REST_Controller::HTTP_UNAUTHORIZED);
     }
 
@@ -34,7 +37,7 @@ class Device extends REST_Controller{
                 'error' => 'Access denied'
             ], REST_Controller::HTTP_UNAUTHORIZED);
         }else{
-            $data=$this->m_device->all_value();
+            $data=$this->m_device->stat_value();
 
             $this->response([
                 'status' => true,

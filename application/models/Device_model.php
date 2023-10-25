@@ -13,4 +13,19 @@ class Device_model extends MY_Model {
         return $this->db->get($this->table_master)->result_array();
     }
 
+    public function stat_value(){
+        $this->db->select('status');
+        $this->db->order_by('id');
+        $data=$this->db->get($this->table_master)->result_array();
+        $rest = '';
+        foreach ($data as $key) {
+        	if ( $key['status'] == 'on' ) {
+        		$rest .= 1;
+        	}else{
+        		$rest .= 0;
+        	}
+        }
+        return $rest;
+    }
+
 }
