@@ -36,4 +36,8 @@ class Device_model extends MY_Model {
         $this->db->where(['id' => $id])->update($this->table_master, ['status' => 'off']);
     }
 
+    public function update_name($id,$name){
+        $this->db->where(['id' => $id])->update($this->table_master, ['name' => $name]);
+    }
+
 }

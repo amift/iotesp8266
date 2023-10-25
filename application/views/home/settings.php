@@ -9,28 +9,28 @@
 			<div class="p-2 mt-1">
 					<div class="p-3 text-center">
 							<div class="p-1">
-								<input class="text-center p-2" id="deviceButton1" type="text" value="device1">	
+								<input maxlength="15" class="text-center p-2" id="deviceButton1" type="text" value="device1">	
 							</div>
 							<div class="p-1">
-								<input class="text-center p-2" id="deviceButton2" type="text" value="device1">	
+								<input maxlength="15" class="text-center p-2" id="deviceButton2" type="text" value="device1">	
 							</div>
 							<div class="p-1">
-								<input class="text-center p-2" id="deviceButton3" type="text" value="device1">	
+								<input maxlength="15" class="text-center p-2" id="deviceButton3" type="text" value="device1">	
 							</div>
 							<div class="p-1">
-								<input class="text-center p-2" id="deviceButton4" type="text" value="device1">	
+								<input maxlength="15" class="text-center p-2" id="deviceButton4" type="text" value="device1">	
 							</div>
 							<div class="p-1">
-								<input class="text-center p-2" id="deviceButton5" type="text" value="device1">	
+								<input maxlength="15" class="text-center p-2" id="deviceButton5" type="text" value="device1">	
 							</div>
 							<div class="p-1">
-								<input class="text-center p-2" id="deviceButton6" type="text" value="device1">	
+								<input maxlength="15" class="text-center p-2" id="deviceButton6" type="text" value="device1">	
 							</div>
 							<div class="p-1">
-								<input class="text-center p-2" id="deviceButton7" type="text" value="device1">	
+								<input maxlength="15" class="text-center p-2" id="deviceButton7" type="text" value="device1">	
 							</div>
 							<div class="p-1">
-								<input class="text-center p-2" id="deviceButton8" type="text" value="device1">	
+								<input maxlength="15" class="text-center p-2" id="deviceButton8" type="text" value="device1">	
 							</div>							
 					</div>
 			</div>
@@ -67,6 +67,20 @@
 	                $('#deviceButton7').val(callback.data[6]['name']);
 
 	                $('#deviceButton8').val(callback.data[7]['name']);	            		
+	            }, 
+	            error: function (jqXHR, textStatus, errorThrown){
+	                alert('Error get data from ajax');
+	            }
+	        });    
+				} 
+
+				function updateName(id, name){ 
+	        $.ajax({
+	            url : baseurl + 'device/updatename',
+	            type: "post",
+	            data: { id : id, name : name },
+	            dataType: "json",
+	            success: function(callback){
 	            },
 					    complete:function(data){ 
 						     setTimeout(fetchdata,2000); 
@@ -75,12 +89,105 @@
 	                alert('Error get data from ajax');
 	            }
 	        });    
+				}
+
+				function iniDeviceInput(){ 						
+				    var timer, value;
+
+				    $('#deviceButton1').bind('keyup', function() {
+				        clearTimeout(timer);
+				        var str = $(this).val();
+				        if (str.length > 2 && value != str) {
+				            timer = setTimeout(function() {
+				                value = str;
+				                updateName(1,value);
+				            }, 500);
+				        }
+				    });
+
+				    $('#deviceButton2').bind('keyup', function() {
+				        clearTimeout(timer);
+				        var str = $(this).val();
+				        if (str.length > 2 && value != str) {
+				            timer = setTimeout(function() {
+				                value = str;
+				                updateName(2,value);
+				            }, 500);
+				        }
+				    });
+
+				    $('#deviceButton3').bind('keyup', function() {
+				        clearTimeout(timer);
+				        var str = $(this).val();
+				        if (str.length > 2 && value != str) {
+				            timer = setTimeout(function() {
+				                value = str;
+				                updateName(3,value);
+				            }, 500);
+				        }
+				    });
+
+				    $('#deviceButton4').bind('keyup', function() {
+				        clearTimeout(timer);
+				        var str = $(this).val();
+				        if (str.length > 2 && value != str) {
+				            timer = setTimeout(function() {
+				                value = str;
+				                updateName(4,value);
+				            }, 500);
+				        }
+				    });
+
+				    $('#deviceButton5').bind('keyup', function() {
+				        clearTimeout(timer);
+				        var str = $(this).val();
+				        if (str.length > 2 && value != str) {
+				            timer = setTimeout(function() {
+				                value = str;
+				                updateName(5,value);
+				            }, 500);
+				        }
+				    });
+
+				    $('#deviceButton6').bind('keyup', function() {
+				        clearTimeout(timer);
+				        var str = $(this).val();
+				        if (str.length > 2 && value != str) {
+				            timer = setTimeout(function() {
+				                value = str;
+				                updateName(6,value);
+				            }, 500);
+				        }
+				    });
+
+				    $('#deviceButton7').bind('keyup', function() {
+				        clearTimeout(timer);
+				        var str = $(this).val();
+				        if (str.length > 2 && value != str) {
+				            timer = setTimeout(function() {
+				                value = str;
+				                updateName(7,value);
+				            }, 500);
+				        }
+				    });
+
+				    $('#deviceButton8').bind('keyup', function() {
+				        clearTimeout(timer);
+				        var str = $(this).val();
+				        if (str.length > 2 && value != str) {
+				            timer = setTimeout(function() {
+				                value = str;
+				                updateName(8,value);
+				            }, 500);
+				        }
+				    });
+
 				} 
 
+
 				$(document).ready(function(){ 
-
+					  iniDeviceInput();
 				  	getDeviceName();
-
 				});
 
 		</script>
