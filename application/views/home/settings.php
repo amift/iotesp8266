@@ -36,6 +36,7 @@
 			</div>
 		</div>
 
+		<br><br><br><br><br>
 	  <?php $this->load->view('home/_navbar.inc.php'); ?>		
 
 		<!-- jQuery -->
